@@ -1,0 +1,333 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+:root {
+  --black-color: #252525;
+  --rivian-yellow: #ffac00;
+  --rivian-green: #00A437;
+  --rivian-purple: #9C8BFF;
+  --rivian-red: #DC3127;
+  --rivian-gray: #D8D8D8;
+  --rivian-lightblue: #BFDFE9;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.side-bar-title-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 55px;
+  background-color: #151515;
+  justify-content: center;
+}
+
+/* .side-bar-title {
+  font-size: 2rem;
+  letter-spacing: 0.2em;
+  margin-left: 20px;
+} */
+
+.side-bar-subheader-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  margin-left: 35px;
+}
+
+.side-bar-subsubheader-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  margin-left: 40px;
+}
+
+.side-bar-subheader {
+  font-size: 0.7rem;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.side-bar-subsubheader {
+  font-size: 0.7rem;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.side-bar-header {
+  font-size: 0.9rem;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.side-bar-subheader-parent-active-div {
+  background-color: #333232;
+  border-left: 5px solid var(--rivian-yellow);
+}
+
+.side-bar-subheader-parent-div {
+  background-color: transparent;
+}
+
+.side-bar-subheader-parent-div:hover {
+  background-color: #333232;
+  cursor: pointer;
+}
+
+.kayak-logo {
+  /* border: 2px solid white; */
+  /* border-radius: 4px; */
+  /* width: 40px;
+  height: 40px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #34d5eb; */
+}
+
+.side-bar-header-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+  width: auto;
+  margin-left: 35px;
+}
+
+.side-bar-separator-parent-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.side-bar-separator-div {
+  border-bottom: 1px solid white;
+  width: 80%;
+  margin-bottom: 25px;
+}
+
+/* Modify the background color */
+.navbar-custom {
+  background-color: var(--black-color);
+  height: 55px;
+}
+
+/* Modify brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.loading-center-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.top-banner-alert {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--rivian-yellow);
+  color: black;
+  font-size: large;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 55px; */
+}
+
+.content-body {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+}
+footer{
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.expand-button {
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.navbar-logo-image-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-bar-collapse {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-bar-collapse-button {
+  position: relative;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 2;
+  height: 40px;
+  transition: all 200ms linear;
+  border-radius: 4px;
+  width: 120px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  margin-left: 5px;
+}
+
+.side-bar-collapse-button:hover {
+  background-color: #48474c;
+}
+
+/* .navbar-sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */
+
+.segmented-control-div {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  width: 300px;
+}
+
+/* event modal */
+.event-tag-ga-completed {
+  background-color: var(--rivian-green);
+  color: black;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.event-tag-in-progress {
+  background-color: var(--rivian-yellow);
+  color: black;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.event-tag-released {
+  background-color: var(--rivian-lightblue);
+  color: black;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.event-tag-wo-generated {
+  background-color: var(--rivian-purple);
+  color: black;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.event-tag-planned {
+  background-color: var(--rivian-gray);
+  color: black;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.nav-item-active {
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--rivian-yellow);
+}
+
+.nav-item-div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+}
