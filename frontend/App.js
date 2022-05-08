@@ -24,9 +24,7 @@ export default function App() {
   });
 
   if (request) {
-    console.log(
-      "You need to add this url to your authorized redirect urls on your Facebook app: " +
-        request.redirectUri
+    console.log(process.env.REACT_APP_FB_APP_ID
     );
   }
 
