@@ -6,7 +6,7 @@ import { Button, Image, StyleSheet, Text, View } from "react-native";
 
 WebBrowser.maybeCompleteAuthSession();
 
-const FB_APP_ID = "492103015819432";
+const FB_APP_ID = process.env.REACT_APP_FB_APP_ID;
 
 export default function App() {
   const [user, setUser] = React.useState(null);
