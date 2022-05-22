@@ -34,15 +34,15 @@ function Logo() {
     <View style={{flexDirection:"row"}}>
       <Text 
         style={{
-          fontSize: 25,
+          fontSize: 15,
           fontWeight:"bold"
           }}
             >Pets</Text>
       <Image
         style={{
           resizeMode: "contain",
-          height: 35,
-          width: 35,
+          height: 25,
+          width: 25,
           marginLeft: 5,
           marginRight: 5
         }}
@@ -50,7 +50,7 @@ function Logo() {
       />
       <Text
         style={{
-          fontSize: 25,
+          fontSize: 15,
           fontStyle:"italic",
           fontWeight:"bold"
           }}>
@@ -77,6 +77,7 @@ function App({navigation}) {
     <NavigationContainer>
       <Drawer.Navigator useLegacyImplementation initialRouteName="Login">
         <Drawer.Screen name="Login" component={FBAuth} options={{
+          drawerItemStyle: {display: 'none'},
           headerShown: false
           }}
         />
